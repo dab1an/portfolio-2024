@@ -5,3 +5,45 @@
 body {
   background-color: black;
 }
+
+.footer {
+  background: linear-gradient(
+    180deg,
+    #3168d5,
+    #4a92e6 7%,
+    #255dd6 12%,
+    #2258d6,
+    15%,
+    #2563e0 95%,
+    #1e50c3
+  );
+}
+
+.start-button {
+  content: "";
+
+  background: linear-gradient(
+    180deg,
+    #29662e,
+    #7dca82 7%,
+
+    #3b7e39 12%,
+    #307e31,
+    #359637,
+    #339731
+  );
+}
+
+.time-tray {
+  background: linear-gradient(
+    180deg,
+    #0b6cd1,
+    #149ce8 2%,
+    #1ab9f4 7%,
+    #14a2ef 13%,
+    #1292e9 15%,
+    #1386e1 50%,
+    #108ae4 90%,
+    #147fdd 95%
+  );
+}
