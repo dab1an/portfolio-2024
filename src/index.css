@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
+  background-color: white;
 }
 
 .footer {
@@ -46,4 +46,12 @@ body {
     #108ae4 90%,
     #147fdd 95%
   );
+}
+
+.backgroundDiv {
+  background-image: url("./images/xp_bg.jpeg");
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  width: 100%;
+  height: 96%; /* Example height, adjust as needed */
 }
