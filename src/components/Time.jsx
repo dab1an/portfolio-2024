@@ -19,7 +19,7 @@ const Time = () => {
   }
 
   return (
-    <div className="flex items-center justify-center h-full time-tray w-[5%]">
+    <div className="flex items-center justify-center h-full time-tray w-[100px]">
       <h1 className="text-white text-lg">{time}</h1>
     </div>
   );
