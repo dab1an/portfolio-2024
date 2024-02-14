@@ -8,9 +8,13 @@ import react_logo from "../images/react_logo.png";
 import tailwind_logo from "../images/tailwind_logo.png";
 import profile from "../images/profile.jpg";
 
-const StartMenu = () => {
+const StartMenu = ({ showWindow }) => {
   return (
-    <div className="h-[450px] w-[500px absolute bottom-0 left-0 start-menu rounded-tr-lg flex flex-col items-center gap-3 pt-4 drop-shad p-1">
+    <div
+      className={`h-[450px] mi:w-[500px] w-full absolute bottom-0 left-0 start-menu rounded-tr-lg flex flex-col items-center gap-3 pt-4 drop-shad p-1 ${
+        showWindow && "hidden"
+      }`}
+    >
       <div className="w-[95%] flex items-center gap-4">
         <img
           src={profile}
@@ -19,10 +23,10 @@ const StartMenu = () => {
         />
         <h1 className="text-white text-xl drop-shad">Dabian</h1>
       </div>
-      <div className="w-[490px] h-[320px] bg-white flex flex-col relative">
+      <div className="w-[99%] h-[320px] bg-white flex flex-col relative">
         <span className="divider h-[4px]"></span>
         <div className="w-full h-full flex pl-3">
-          <div className="h-full w-[39%] flex flex-col justify-start pt-2 gap-2">
+          <div className="h-full mi:w-[39%] w-[60%] flex flex-col justify-start pt-2 gap-2">
             <section className="flex flex-col gap-2 pb-2">
               <StartMenuFolder
                 folder={folder_chat}

@@ -5,10 +5,10 @@ import text_icon from "../images/text_icon.png";
 import net_icon from "../images/net_icon.png";
 import messenger_icon from "../images/messenger_icon.png";
 import StartMenu from "./StartMenu";
-const BG = () => {
+const BG = ({ showWindow }) => {
   return (
     <div className="text-white h-[96%] flex justify-center items-center backgroundDiv gap-8 relative">
-      <StartMenu />
+      <StartMenu showWindow={showWindow} />
 
       <div className="flex justify-center items-center gap-8">
         <Icon icon={text_icon} name="Resume" />
