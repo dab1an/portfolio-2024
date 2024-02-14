@@ -9,6 +9,7 @@ const BG = () => {
   return (
     <div className="text-white h-[96%] flex justify-center items-center backgroundDiv gap-8 relative">
       <StartMenu />
+
       <div className="flex justify-center items-center gap-8">
         <Icon icon={text_icon} name="Resume" />
         <Icon
