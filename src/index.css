@@ -3,9 +3,12 @@
 @tailwind utilities;
 
 body {
-  background-color: white;
+  background-color: #1555aa;
 }
 
+.main {
+  background-color: #1555aa;
+}
 .footer {
   background: linear-gradient(
     180deg,
