@@ -8,7 +8,7 @@ const Icon = (props) => {
         <a href={props.link} target="_blank">
           <img src={props.icon} alt="" className="h-12 w-12 cursor-pointer" />
         </a>
-        <h1 className="">{props.name}</h1>
+        <h1 className="drop-shad">{props.name}</h1>
       </div>
     </div>
   );
