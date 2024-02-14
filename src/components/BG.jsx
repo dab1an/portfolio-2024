@@ -28,7 +28,7 @@ const BG = ({ showWindow }) => {
         <Icon icon={net_icon} name="INIT" link="https://www.weareinit.org/" />
 
         <motion.div
-          className="w-16 h-32"
+          className="w-16 h-32 absolute"
           drag
           dragConstraints={constraintsRef}
           dragMomentum={false}
