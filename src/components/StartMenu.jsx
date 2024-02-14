@@ -13,7 +13,7 @@ const StartMenu = ({ showWindow }) => {
     <div
       className={`h-[450px] mi:w-[500px] w-full absolute bottom-0 left-0 start-menu rounded-tr-lg flex flex-col items-center gap-3 pt-4 drop-shad p-1 ${
         showWindow && "hidden"
-      }`}
+      } z-10`}
     >
       <div className="w-[95%] flex items-center gap-4">
         <img

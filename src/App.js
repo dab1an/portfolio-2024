@@ -11,7 +11,7 @@ const App = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col ">
+    <div className="h-svh flex flex-col ">
       <BG showWindow={showWindow} />
       <Taskbar handleShowWindow={handleShowWindow} />
     </div>
