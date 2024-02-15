@@ -5,14 +5,23 @@ import { useState } from "react";
 
 const App = () => {
   const [showWindow, setShowWindow] = useState(true);
+  const [showAboutWindow, setShowAboutWindow] = useState(false);
 
   const handleShowWindow = () => {
     setShowWindow(!showWindow);
   };
 
+  const handleShowAboutWindow = () => {
+    setShowAboutWindow(!showAboutWindow);
+  };
+
   return (
     <div className="h-svh flex flex-col ">
-      <BG showWindow={showWindow} />
+      <BG
+        showWindow={showWindow}
+        showAboutWindow={showAboutWindow}
+        handleShowAboutWindow={handleShowAboutWindow}
+      />
       <Taskbar handleShowWindow={handleShowWindow} />
     </div>
   );
