@@ -22,7 +22,7 @@ const AboutWindowContent = () => {
         <img
           src={linkedin_pfp}
           alt=""
-          className=" h-[125px] rounded-sm outline outline-2 outline-blue-600"
+          className=" mi:h-[125px] rounded-sm outline outline-2 outline-blue-600 h-[100px]"
         />
         <div className="">
           <h1 className="text-black text-2xl font-bold">Dabian Garnica</h1>
