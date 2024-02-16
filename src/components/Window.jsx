@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import exit from "../images/exit.png";
 import minimize from "../images/minimize.png";
 import maximize from "../images/maximize.png";
+import notepad from "../images/notepad.png";
 
 const Window = ({
   handleShowDragWindow,
@@ -22,7 +23,10 @@ const Window = ({
       dragMomentum={false}
     >
       <div className="flex justify-between items-center w-[98%]">
-        <h1 className="drop-shad">{title}</h1>
+        <div className="flex justify-center items-center">
+          <img src={notepad} alt="" className="h-6  " />
+          <h1 className="drop-shad">{title}</h1>
+        </div>
         <div className="flex justify-center items gap-1">
           <img src={minimize} alt="" className="h-6 w-6 cursor-pointer" />
           <img src={maximize} alt="" className="h-6 w-6 cursor-pointer" />

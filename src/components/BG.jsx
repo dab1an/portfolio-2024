@@ -58,7 +58,7 @@ const BG = ({ showWindow }) => {
           handleShowDragWindow={setShowAboutWindow}
           showDragWindow={showAboutWindow}
           constraintsRef={constraintsRef}
-          title="About Me"
+          title="Notepad - About Me"
           maxWidth="mi:w-[580px]"
         >
           <AboutWindowContent />
