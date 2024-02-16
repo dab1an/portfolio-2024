@@ -22,7 +22,7 @@ const AboutWindowContent = () => {
         <img
           src={linkedin_pfp}
           alt=""
-          className=" mi:h-[125px] rounded-sm outline outline-2 outline-blue-600 h-[100px]"
+          className=" mi:h-[125px] rounded-sm outline outline-2 outline-blue-600 h-[85px]"
         />
         <div className="">
           <h1 className="text-black text-2xl font-bold">Dabian Garnica</h1>
@@ -52,7 +52,7 @@ const AboutWindowContent = () => {
           </h1>
         </div>
       </div>
-      <div className="text-black text-justify">
+      <div className="text-black text-md text-justify">
         I'm an aspiring web developer and software engineer with a passion for
         creating elegant digital solutions. Constantly learning and adapting, I
         thrive on collaborating with others to tackle challenging projects. With
