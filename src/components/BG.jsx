@@ -1,25 +1,27 @@
 import React from "react";
 import Icon from "./Icon";
+
 //images
 import folder_icon from "../images/folder_icon.png";
 import text_icon from "../images/text_icon.png";
 import net_icon from "../images/net_icon.png";
-import messenger_icon from "../images/messenger_icon.png";
-import exit from "../images/exit.png";
+import msn_messenger_icon from "../images/msn_messenger_icon.png";
+import linkedin_pfp from "../images/linkedin_pfp.jpg";
+import c_logo from "../images/c_logo.png";
+
+import { FaJava } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { IoLogoJavascript } from "react-icons/io5";
+import { BiLogoTypescript } from "react-icons/bi";
 
 import StartMenu from "./StartMenu";
-import msn_messenger_icon from "../images/msn_messenger_icon.png";
-import minimize from "../images/minimize.png";
-import maximize from "../images/maximize.png";
-import linkedin_pfp from "../images/linkedin_pfp.jpg";
-
-import { useState } from "react";
-
 import Window from "./Window";
 
-//React
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import AboutWindowContent from "./AboutWindowContent";
 
 const BG = ({ showWindow }) => {
   const [showAboutWindow, setShowAboutWindow] = useState(true);
@@ -33,10 +35,7 @@ const BG = ({ showWindow }) => {
     >
       <StartMenu showWindow={showWindow} />
 
-      <div
-        className="flex justify-center items-center gap-8 flex-wrap"
-        onClick={() => console.log("clicked 1")}
-      >
+      <div className="flex justify-center items-center gap-8 flex-wrap">
         <Icon
           icon={text_icon}
           name="abt_me.txt"
@@ -60,41 +59,9 @@ const BG = ({ showWindow }) => {
           showDragWindow={showAboutWindow}
           constraintsRef={constraintsRef}
           title="About Me"
+          maxWidth="mi:w-[580px]"
         >
-          <div className="flex items-center gap-2 w-full">
-            <img
-              src={linkedin_pfp}
-              alt=""
-              className=" h-[100px] rounded-sm outline outline-2 outline-blue-600"
-            />
-            <div className="">
-              <h1 className="text-black text-xl font-bold">Dabian Garnica</h1>
-              <h1 className="text-neutral-500 text-xl ">
-                Computer Science @{" "}
-                <span className="text-blue-500 font-bold">
-                  <a
-                    href="https://www.fiu.edu/"
-                    className="text-blue-500 underline"
-                    target="_blank"
-                  >
-                    FIU
-                  </a>
-                </span>
-              </h1>
-              <h1 className="text-neutral-500 text-xl ">
-                Program Manager @{" "}
-                <span className="text-blue-500">
-                  <a
-                    href="https://www.weareinit.org/"
-                    className="text-blue-500 underline font-bold"
-                    target="_blank"
-                  >
-                    INIT
-                  </a>
-                </span>
-              </h1>
-            </div>
-          </div>
+          <AboutWindowContent />
         </Window>
         <Window
           title="Projects"

@@ -92,6 +92,84 @@ body {
   /* transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out; */
 }
 
+.window-bg {
+  background: linear-gradient(
+    180deg,
+    #3168d5,
+    #4a92e6 2px,
+    #255dd6 5px,
+    #2258d6,
+    15px,
+    #2563e0 95%,
+    #1e50c3
+  );
+}
+
+.window-bg-java {
+  background: linear-gradient(
+    180deg,
+    #d59331,
+    #e6a24a 2px,
+    #d68625 5px,
+    #d67f22,
+    15px,
+    #e08625 95%,
+    #c36b1e
+  );
+}
+
+.window-bg-python {
+  background: linear-gradient(
+    180deg,
+    #d5d531,
+    #e6e34a 2px,
+    #d6d025 5px,
+    #d6d022,
+    15px,
+    #e0d725 95%,
+    #c3b81e
+  );
+}
+
+.window-bg-react {
+  background: linear-gradient(
+    180deg,
+    #52c3df,
+    #61dbfb 2px,
+    #52c3df 5px,
+    #52c3df,
+    15px,
+    #2fa9c7 95%,
+    #2995b0
+  );
+}
+
+.window-bg-next {
+  background: linear-gradient(
+    180deg,
+    #141413,
+    #727272 2px,
+    #1a1a1a 5px,
+    #1b1b1b,
+    15px,
+    #181818 95%,
+    #202020
+  );
+}
+
+.window-bg-express {
+  background: linear-gradient(
+    180deg,
+    #fcfcfc,
+    rgb(229, 229, 229) 2px,
+    #dad9d9 5px,
+    #e6e6e6,
+    15px,
+    #e6e6e6 95%,
+    #d2d2d2
+  );
+}
+
 .divider {
   background: linear-gradient(90deg, #fff, #fdc166, #f7b555, #f7b555, #d3e5fb);
 }
