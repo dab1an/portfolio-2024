@@ -35,15 +35,10 @@ const BG = ({ showWindow }) => {
     >
       <StartMenu showWindow={showWindow} />
 
-      <div className="flex justify-center items-center gap-8 flex-wrap">
+      <div className="flex justify-center items-center gap-7 flex-wrap">
         <Icon
           icon={text_icon}
           name="abt_me.txt"
-          onClick={() => setShowAboutWindow(true)}
-        />
-        <Icon
-          icon={text_icon}
-          name="resume.txt"
           onClick={() => setShowAboutWindow(true)}
         />
         <Icon
@@ -52,6 +47,12 @@ const BG = ({ showWindow }) => {
           onClick={() => setShowDirectoryWindow(true)}
           link="https://github.com/dab1an?tab=repositories"
         />
+        <Icon
+          icon={text_icon}
+          name="resume.txt"
+          onClick={() => setShowAboutWindow(true)}
+        />
+
         <Icon
           icon={msn_messenger_icon}
           name="Contact"
