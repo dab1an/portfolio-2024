@@ -11,7 +11,7 @@ import profile from "../images/profile.jpg";
 const StartMenu = ({ showWindow }) => {
   return (
     <div
-      className={`h-[450px] mi:w-[500px] w-full absolute bottom-0 left-0 start-menu rounded-tr-lg flex flex-col items-center gap-3 pt-4 drop-shad p-1 ${
+      className={`h-[450px] mi:w-[500px] w-full absolute bottom-0 left-0 start-menu rounded-tr-lg flex flex-col items-center gap-3 pt-4 drop-shad p-1 overflow-hidden ${
         showWindow && "hidden"
       } z-10`}
     >

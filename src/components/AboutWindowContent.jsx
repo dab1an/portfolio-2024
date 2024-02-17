@@ -52,7 +52,7 @@ const AboutWindowContent = () => {
           </h1>
         </div>
       </div>
-      <div className="text-black text-md text-justify">
+      <div className="text-black text-justify mi:text-[16px] text-sm">
         I'm an aspiring web developer and software engineer with a passion for
         creating elegant digital solutions. Constantly learning and adapting, I
         thrive on collaborating with others to tackle challenging projects. With
