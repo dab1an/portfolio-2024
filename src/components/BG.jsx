@@ -30,7 +30,7 @@ const BG = ({ showWindow }) => {
   const constraintsRef = useRef(null);
   return (
     <motion.div
-      className="text-white h-[95%] flex justify-center items-center backgroundDiv gap-8 relative overflow-hidden"
+      className="text-white h-full flex justify-center items-center backgroundDiv gap-8 relative overflow-hidden"
       ref={constraintsRef}
     >
       <StartMenu showWindow={showWindow} />
