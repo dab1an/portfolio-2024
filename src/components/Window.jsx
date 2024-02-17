@@ -25,7 +25,7 @@ const Window = ({
       <div className="flex justify-between items-center w-[98%]">
         <div className="flex justify-center items-center">
           <img src={notepad} alt="" className="h-6  " />
-          <h1 className="drop-shad">{title}</h1>
+          <h1 className="drop-shad regular">{title}</h1>
         </div>
         <div className="flex justify-center items gap-1">
           <img src={minimize} alt="" className="h-6 w-6 cursor-pointer" />

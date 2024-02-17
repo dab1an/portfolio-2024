@@ -32,6 +32,7 @@ const StartMenu = ({ showWindow }) => {
                 folder={folder_chat}
                 social="Email"
                 handle="contact@dabian.dev"
+                link="mailto:contact@dabian.dev"
               />
               <StartMenuFolder
                 folder={folder_pics}

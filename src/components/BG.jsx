@@ -52,7 +52,11 @@ const BG = ({ showWindow }) => {
           onClick={() => setShowDirectoryWindow(true)}
           link="https://github.com/dab1an?tab=repositories"
         />
-        <Icon icon={msn_messenger_icon} name="Contact" link="" />
+        <Icon
+          icon={msn_messenger_icon}
+          name="Contact"
+          link="mailto:contact@dabian.dev"
+        />
         <Icon icon={net_icon} name="INIT" link="https://www.weareinit.org/" />
         <Window
           handleShowDragWindow={setShowAboutWindow}

@@ -18,49 +18,52 @@ import { SiExpress } from "react-icons/si";
 const AboutWindowContent = () => {
   return (
     <div className="flex flex-col gap-2">
-      <div className="flex items-center gap-2 w-full">
+      <div className=" flex flex-col items-center gap-2 w-full mi:flex-row">
         <img
           src={linkedin_pfp}
           alt=""
-          className=" mi:h-[125px] rounded-sm outline outline-2 outline-blue-600 h-[85px]"
+          className=" mi:h-[160px] mi:block hidden rounded-md outline outline-2 outline-blue-600 h-[85px]"
         />
-        <div className="">
-          <h1 className="text-black text-2xl font-bold">Dabian Garnica</h1>
-          <h1 className="text-neutral-500 text-xl ">
-            Computer Science @{" "}
-            <span className="text-blue-500 font-bold">
-              <a
-                href="https://www.fiu.edu/"
-                className="text-blue-500 underline"
-                target="_blank"
-              >
-                FIU
-              </a>
-            </span>
-          </h1>
-          <h1 className="text-neutral-500 text-xl ">
-            Program Manager @{" "}
-            <span className="text-blue-500">
-              <a
-                href="https://www.weareinit.org/"
-                className="text-blue-500 underline font-bold"
-                target="_blank"
-              >
-                INIT
-              </a>
-            </span>
-          </h1>
+        <div className="flex flex-col gap-1 ">
+          <h1 className="text-black text-2xl bold">Dabian Garnica</h1>
+          <div className="flex flex-wrap gap-1">
+            <h1 className="text-neutral-500 text-sm regular">
+              Computer Science @{" "}
+              <span className="text-blue-500 font-bold regular">
+                <a
+                  href="https://www.fiu.edu/"
+                  className="text-blue-500 underline"
+                  target="_blank"
+                >
+                  FIU
+                </a>
+              </span>
+            </h1>
+            <span className="text-sm text-neutral-500"> | </span>
+            <h1 className="text-neutral-500 text-sm regular">
+              Program Manager @{" "}
+              <span className="text-blue-500">
+                <a
+                  href="https://www.weareinit.org/"
+                  className="text-blue-500 underline font-bold regular"
+                  target="_blank"
+                >
+                  INIT
+                </a>
+              </span>
+            </h1>
+          </div>
+          <div className="text-black  mi:text-[16px] text-sm regular">
+            I'm an aspiring web developer and software engineer with a passion
+            for creating elegant digital solutions. With a commitment to
+            excellence and a drive to innovate, I'm excited to contribute to the
+            dynamic world of technology.
+          </div>
         </div>
       </div>
-      <div className="text-black text-justify mi:text-[16px] text-sm">
-        I'm an aspiring web developer and software engineer with a passion for
-        creating elegant digital solutions. Constantly learning and adapting, I
-        thrive on collaborating with others to tackle challenging projects. With
-        a commitment to excellence and a drive to innovate, I'm excited to
-        contribute to the dynamic world of technology.
-      </div>
+
       <div className="w-full flex flex-col gap-1">
-        <h1 className="text-black font-bold">Languages:</h1>
+        <h1 className="text-black italic">Languages:</h1>
         <div className="flex flex-wrap bg-white gap-2">
           <div className="window-bg-java h-8 rounded-md flex items-center p-2 gap-1 text-md">
             <h1 className=""> Java </h1>
@@ -95,7 +98,7 @@ const AboutWindowContent = () => {
       </div>
 
       <div className="w-full flex flex-col gap-1">
-        <h1 className="text-black font-bold">Frameworks:</h1>
+        <h1 className="text-black italic">Frameworks:</h1>
         <div className="flex flex-wrap bg-white gap-2">
           <div className="window-bg-react h-8 rounded-md flex items-center p-2 gap-1 text-md">
             <h1 className=""> React </h1>

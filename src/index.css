@@ -2,8 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Regular"; /*Can be any text*/
+  src: local("Tahoma_Regular_font"),
+    url("./fonts/Tahoma_Regular_font.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bold"; /*Can be any text*/
+  src: local("TAHOMABD"), url("./fonts/TAHOMABD.ttf") format("truetype");
+}
+
 body {
   background-color: #1555aa;
+}
+
+.regular {
+  font-family: "Regular";
+}
+
+.bold {
+  font-family: "Bold";
 }
 
 .main {
