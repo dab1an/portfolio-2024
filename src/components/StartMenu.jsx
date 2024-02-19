@@ -1,5 +1,6 @@
 import React from "react";
 import profilePic from "../images/blank_profile.jpeg";
+import blank_profile from "../images/blank_profile.jpeg";
 import folder_pics from "../images/folder_pics.png";
 import folder_chat from "../images/folder_chat.png";
 import folder_music from "../images/folder_music.png";
@@ -17,7 +18,7 @@ const StartMenu = ({ showWindow }) => {
     >
       <div className="w-[95%] flex items-center gap-4">
         <img
-          src={profile}
+          src={blank_profile}
           alt=""
           className=" w-[50px] rounded-sm outline outline-2 outline-white"
         />
