@@ -75,7 +75,11 @@ const BG = ({ showWindow }) => {
           maxWidth="mi:w-[525px]"
         >
           <div href={resume} download="Dabian's Resume" className="relative">
-            <img src={dabian_resume} alt="" className="border-[2px] h-full" />
+            <img
+              src={dabian_resume}
+              alt=""
+              className="border-[2px] h-[575px]"
+            />
             <a href={resume} target="_blank" download="Garnica_Dabian_Resume">
               <button className="bg-black bg-opacity-50 hover:bg-gray-600 h-8 w-8 absolute top-[7px] right-[7px] flex justify-center items-center rounded-md">
                 <RiDownload2Fill className="text-white" />
