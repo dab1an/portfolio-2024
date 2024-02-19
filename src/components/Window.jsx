@@ -12,10 +12,11 @@ const Window = ({
   children,
   title,
   maxWidth,
+  maxHeight,
 }) => {
   return (
     <motion.div
-      className={`w-[98%] absolut bg-red-500 window flex flex-col items-center justify-center gap-1 pt-2 pb-1  rounded-tr-md rounded-tl-md ${maxWidth} ${
+      className={`w-[98%] absolut bg-red-500 window flex flex-col items-center justify-center gap-1 pt-2 pb-1  rounded-tr-md rounded-tl-md ${maxWidth} ${maxHeight} ${
         !showDragWindow && "hidden"
       }`}
       drag

@@ -8,12 +8,10 @@ import net_icon from "../images/net_icon.png";
 import msn_messenger_icon from "../images/msn_messenger_icon.png";
 import linkedin_pfp from "../images/linkedin_pfp.jpg";
 import c_logo from "../images/c_logo.png";
+import dabian_resume from "../images/dabian_resume.jpg";
+import resume from "../images/resume.pdf";
 
-import { FaJava } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
-import { TbBrandNextjs } from "react-icons/tb";
-import { IoLogoJavascript } from "react-icons/io5";
-import { BiLogoTypescript } from "react-icons/bi";
+import { RiDownload2Fill } from "react-icons/ri";
 
 import StartMenu from "./StartMenu";
 import Window from "./Window";
@@ -25,6 +23,7 @@ import AboutWindowContent from "./AboutWindowContent";
 
 const BG = ({ showWindow }) => {
   const [showAboutWindow, setShowAboutWindow] = useState(true);
+  const [showResumeWindow, setShowResumeWindow] = useState(false);
   const [showDirectoryWindow, setShowDirectoryWindow] = useState(false);
 
   const constraintsRef = useRef(null);
@@ -50,9 +49,8 @@ const BG = ({ showWindow }) => {
         <Icon
           icon={text_icon}
           name="resume.txt"
-          onClick={() => setShowAboutWindow(true)}
+          onClick={() => setShowResumeWindow(true)}
         />
-
         <Icon
           icon={msn_messenger_icon}
           name="Contact"
@@ -68,6 +66,24 @@ const BG = ({ showWindow }) => {
         >
           <AboutWindowContent />
         </Window>
+
+        <Window
+          handleShowDragWindow={setShowResumeWindow}
+          showDragWindow={showResumeWindow}
+          constraintsRef={constraintsRef}
+          title="Notepad - Resume"
+          maxWidth="mi:w-[525px]"
+        >
+          <div href={resume} download="Dabian's Resume" className="relative">
+            <img src={dabian_resume} alt="" className="border-[2px] h-full" />
+            <a href={resume} target="_blank" download="Garnica_Dabian_Resume">
+              <button className="bg-black bg-opacity-50 hover:bg-gray-600 h-8 w-8 absolute top-[7px] right-[7px] flex justify-center items-center rounded-md">
+                <RiDownload2Fill className="text-white" />
+              </button>
+            </a>
+          </div>
+        </Window>
+
         <Window
           title="Projects"
           handleShowDragWindow={setShowDirectoryWindow}
