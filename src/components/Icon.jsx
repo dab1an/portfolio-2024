@@ -6,7 +6,7 @@ const Icon = (props) => {
     <div onClick={props.onClick}>
       <div className="flex flex-col justify-center items-center">
         <a href={props.link} target="_blank">
-          <img src={props.icon} alt="" className="h-12 w-12 cursor-pointer" />
+          <img src={props.icon} alt="" className="h-12 w-12 cursor-pointer " />
         </a>
         <h1 className="drop-shad">{props.name}</h1>
       </div>

@@ -35,7 +35,7 @@ const BG = ({ showWindow }) => {
     >
       <StartMenu showWindow={showWindow} />
 
-      <div className="flex justify-center items-center gap-7 flex-wrap">
+      <div className="flex justify-center items-center gap-7 flex-wrap mi:w-[500px] w-[300px]">
         <Icon
           icon={text_icon}
           name="abt_me.txt"

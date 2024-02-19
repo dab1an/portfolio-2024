@@ -28,6 +28,79 @@ body {
 .main {
   background-color: #1555aa;
 }
+
+.sign-in-color {
+  background-color: #508fd9;
+}
+.sign-in-top {
+  border-image-source: linear-gradient(
+    90deg,
+    #004da3 0%,
+    rgba(255, 255, 255, 0.8) 30%,
+    rgba(255, 255, 255, 0.9) 40%,
+    rgba(255, 255, 255, 0.9) 50%,
+    #004da3 100%
+  );
+  border-width: 0 0 4px 0;
+  background-color: #004da3;
+  flex-basis: 12.5%;
+  border-image-slice: 1;
+}
+
+.sign-in-bottom {
+  border-image-source: linear-gradient(
+    90deg,
+    #004da3 0%,
+    #f09644 30%,
+    #f09644 40%,
+    #f09644 50%,
+    #004da3 100%
+  );
+  background-color: #004da3;
+  border-width: 4px 0 0 0;
+  flex-basis: 12.5%;
+  border-image-slice: 1;
+}
+
+.sign-in-main {
+  .login-screen__center {
+    flex: 1;
+    display: flex;
+    background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.6) -21%,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 700px 700px;
+    background-position: -240px -210px;
+    background-repeat: no-repeat;
+  }
+}
+
+.sign-in-splash {
+  .login-screen__instructions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+    align-items: flex-end;
+    border-right-width: 1px;
+    border-image-source: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 5%,
+      rgba(255, 255, 255, 0.5) 15%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0.5) 85%,
+      rgba(255, 255, 255, 0) 95%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    border-image-slice: 0 1 0 0;
+    border-right-style: solid;
+  }
+}
+
 .footer {
   background: linear-gradient(
     180deg,
