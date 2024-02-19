@@ -17,8 +17,8 @@ const App = () => {
   return (
     <div className="h-svh flex flex-col relative">
       <SignIn />
-      <BG showWindow={showWindow} />
-      <Taskbar handleShowWindow={handleShowWindow} />
+      {/* <BG showWindow={showWindow} />
+      <Taskbar handleShowWindow={handleShowWindow} /> */}
     </div>
   );
 };

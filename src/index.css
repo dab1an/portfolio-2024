@@ -63,42 +63,47 @@ body {
 }
 
 .sign-in-main {
-  .login-screen__center {
-    flex: 1;
-    display: flex;
-    background-image: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 0.6) -21%,
-      rgba(255, 255, 255, 0) 60%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    background-size: 700px 700px;
-    background-position: -240px -210px;
-    background-repeat: no-repeat;
-  }
+  flex: 1;
+  display: flex;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.6) -21%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 700px 700px;
+  background-position: -240px -210px;
+  background-repeat: no-repeat;
 }
 
 .sign-in-splash {
-  .login-screen__instructions {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 30px;
-    align-items: flex-end;
-    border-right-width: 1px;
-    border-image-source: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0) 5%,
-      rgba(255, 255, 255, 0.5) 15%,
-      rgba(255, 255, 255, 0.5) 50%,
-      rgba(255, 255, 255, 0.5) 85%,
-      rgba(255, 255, 255, 0) 95%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    border-image-slice: 0 1 0 0;
-    border-right-style: solid;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 30px;
+  align-items: flex-end;
+  border-right-width: 1px;
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 5%,
+    rgba(255, 255, 255, 0.5) 15%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.5) 85%,
+    rgba(255, 255, 255, 0) 95%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-image-slice: 0 1 0 0;
+  border-right-style: solid;
+}
+
+.sign-in-account {
+  background: linear-gradient(90deg, #00489a 60%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 8px;
+}
+
+.password {
+  box-shadow: #00489a 2px 2px 0px 0px;
 }
 
 .footer {
@@ -268,6 +273,19 @@ body {
 
 .divider2 {
   background: linear-gradient(90deg, #fff, #c4c4c4, #a1a1a1, #c4c4c4, #fff);
+}
+
+.divider3 {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 5%,
+    rgba(255, 255, 255, 0.5) 15%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.5) 85%,
+    rgba(255, 255, 255, 0) 95%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 .drop-shad {
