@@ -45,7 +45,14 @@ const SignIn = () => {
               <h1 className="text-3xl pb-4">Dabian G.</h1>
               <p className="pb-6 text-sm">Type your password</p>
               <div action="" className="absolute top-[74px] flex gap-2">
-                <input className="rounded-md h-[38px] text-black password pl-2 text-xl w-[175px] " />
+                <input
+                  className="rounded-md h-[38px] text-black password pl-2 text-xl w-[175px]"
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      setShowSignIn(!showSignIn);
+                    }
+                  }}
+                />
                 <img
                   src={go_icon}
                   alt=""

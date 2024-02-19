@@ -71,7 +71,6 @@ const BG = ({ showWindow }) => {
         <Window
           title="Projects"
           handleShowDragWindow={setShowDirectoryWindow}
-          showDragWindow={showDirectoryWindow}
           constraintsRef={constraintsRef}
         >
           <div className="bg-red-500 h-[75%]"></div>
