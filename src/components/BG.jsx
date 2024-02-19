@@ -78,7 +78,7 @@ const BG = ({ showWindow }) => {
             <img
               src={dabian_resume}
               alt=""
-              className="border-[2px] h-[550px]"
+              className="border-[2px] mi:h-[625px] h-[550px]"
             />
             <a href={resume} target="_blank" download="Garnica_Dabian_Resume">
               <button className="bg-black bg-opacity-50 hover:bg-gray-600 h-8 w-8 absolute top-[7px] right-[7px] flex justify-center items-center rounded-md">
