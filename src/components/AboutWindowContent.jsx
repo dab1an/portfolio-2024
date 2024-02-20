@@ -2,7 +2,7 @@ import React from "react";
 
 import linkedin_pfp from "../images/linkedin_pfp.jpg";
 import c_logo from "../images/c_logo.png";
-
+import abt_me from "../images/abt_me.jpeg";
 import { FaJava } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -20,7 +20,7 @@ const AboutWindowContent = () => {
     <div className="flex flex-col gap-2">
       <div className=" flex flex-col items-center gap-2 w-full mi:flex-row">
         <img
-          src={linkedin_pfp}
+          src={abt_me}
           alt=""
           className=" mi:h-[160px] mi:block hidden rounded-md outline outline-2 outline-blue-600 h-[85px]"
         />

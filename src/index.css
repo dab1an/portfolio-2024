@@ -13,6 +13,12 @@
   src: local("TAHOMABD"), url("./fonts/TAHOMABD.ttf") format("truetype");
 }
 
+input::placeholder {
+  font-weight: bold;
+  opacity: 1;
+  color: black;
+}
+
 body {
   background-color: #1555aa;
 }

@@ -3,29 +3,24 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 import dabianpc_logo from "../images/dabianpc_logo.png";
-import linkedin_pfp from "../images/linkedin_pfp.jpg";
+
+import linked_in_new from "../images/linked_in_new.jpeg";
 import blank_profile from "../images/blank_profile.jpeg";
 import go_icon from "../images/go_icon.png";
 import power_icon from "../images/power_icon.png";
 
 const SignIn = () => {
-  const [fade, setFade] = useState(false);
-  const [vanish, setVanish] = useState(false);
+  const [showSignIn, setShowSignIn] = useState(true);
 
   useEffect(() => {
-    if (fade) {
-      const interval = setInterval(() => {
-        setVanish(true);
-      }, 500);
-      return () => clearInterval(interval);
-    }
-  }, [fade]);
+    setShowSignIn(!showSignIn);
+  }, []);
 
   return (
     <div
       className={`absolute h-svh w-full z-[12] flex flex-col sign-in-color ${
-        vanish && "opacity-0"
-      } transition-opacity duration-[1200ms]`}
+        showSignIn && "hidden"
+      }`}
     >
       <div className="w-full sign-in-top border-solid"></div>
       <div className="w-full h-full sign-in-main emd:flex-row flex flex-col items-center justify-center">
@@ -42,7 +37,7 @@ const SignIn = () => {
           <span className="divider3 emd:h-0 h-[2px] emd:w-0 w-full"></span>
           <div className="sign-in-account ml-9 h-[110px] emd:w-[380px] w-[370px] flex items-center gap-4 pl-3">
             <img
-              src={blank_profile}
+              src={linked_in_new}
               alt=""
               className="h-[85px] w-[85px] rounded-md border-[3px] border-yellow-400 drop-shad"
             />
@@ -55,7 +50,7 @@ const SignIn = () => {
                   className="rounded-md h-[38px] text-black password pl-2 text-xl w-[175px]"
                   onKeyDown={(e) => {
                     if (e.key === "Enter") {
-                      setFade(true);
+                      setShowSignIn(!showSignIn);
                     }
                   }}
                 />
@@ -63,7 +58,9 @@ const SignIn = () => {
                   src={go_icon}
                   alt=""
                   className="h-[34px] rounded-sm password cursor-pointer"
-                  onClick={() => setFade(true)}
+                  onClick={() => {
+                    setShowSignIn(!showSignIn);
+                  }}
                 />
               </div>
             </div>

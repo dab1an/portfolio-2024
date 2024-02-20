@@ -8,6 +8,7 @@ import StartMenuFolder from "./StartMenuFolder.jsx";
 import react_logo from "../images/react_logo.png";
 import tailwind_logo from "../images/tailwind_logo.png";
 import profile from "../images/profile.jpg";
+import linked_in_new from "../images/linked_in_new.jpeg";
 
 const StartMenu = ({ showWindow }) => {
   return (
@@ -18,11 +19,11 @@ const StartMenu = ({ showWindow }) => {
     >
       <div className="w-[95%] flex items-center gap-4">
         <img
-          src={blank_profile}
+          src={linked_in_new}
           alt=""
           className=" w-[50px] rounded-sm outline outline-2 outline-white"
         />
-        <h1 className="text-white text-xl drop-shad">Dabian</h1>
+        <h1 className="text-white text-xl drop-shad">Dabian G.</h1>
       </div>
       <div className="w-[99%] h-[320px] bg-white flex flex-col relative">
         <span className="divider h-[4px]"></span>
