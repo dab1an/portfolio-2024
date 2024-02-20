@@ -9,17 +9,23 @@ import go_icon from "../images/go_icon.png";
 import power_icon from "../images/power_icon.png";
 
 const SignIn = () => {
-  const [showSignIn, setShowSignIn] = useState(true);
+  const [fade, setFade] = useState(false);
+  const [vanish, setVanish] = useState(false);
 
   useEffect(() => {
-    setShowSignIn(!showSignIn);
-  }, []);
+    if (fade) {
+      const interval = setInterval(() => {
+        setVanish(true);
+      }, 500);
+      return () => clearInterval(interval);
+    }
+  }, [fade]);
 
   return (
     <div
       className={`absolute h-svh w-full z-[12] flex flex-col sign-in-color ${
-        showSignIn && "hidden"
-      }`}
+        vanish && "opacity-0"
+      } transition-opacity duration-[1200ms]`}
     >
       <div className="w-full sign-in-top border-solid"></div>
       <div className="w-full h-full sign-in-main emd:flex-row flex flex-col items-center justify-center">
@@ -49,7 +55,7 @@ const SignIn = () => {
                   className="rounded-md h-[38px] text-black password pl-2 text-xl w-[175px]"
                   onKeyDown={(e) => {
                     if (e.key === "Enter") {
-                      setShowSignIn(!showSignIn);
+                      setFade(true);
                     }
                   }}
                 />
@@ -57,9 +63,7 @@ const SignIn = () => {
                   src={go_icon}
                   alt=""
                   className="h-[34px] rounded-sm password cursor-pointer"
-                  onClick={() => {
-                    setShowSignIn(!showSignIn);
-                  }}
+                  onClick={() => setFade(true)}
                 />
               </div>
             </div>
